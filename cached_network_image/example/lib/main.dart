@@ -41,7 +41,7 @@ class BasicContent extends StatelessWidget {
             _sizedContainer(
               const Image(
                 image: CachedNetworkImageProvider(
-                  'https://via.placeholder.com/350x150',
+                  'https://upload.wikimedia.org/wikipedia/commons/6/6d/TFT-Pixel-Demo-Image-200x150.png',
                 ),
               ),
             ),
@@ -60,12 +60,12 @@ class BasicContent extends StatelessWidget {
               CachedNetworkImage(
                 placeholder: (context, url) =>
                     const CircularProgressIndicator(),
-                imageUrl: 'https://via.placeholder.com/200x150',
+                imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/6/6d/TFT-Pixel-Demo-Image-200x150.png',
               ),
             ),
             _sizedContainer(
               CachedNetworkImage(
-                imageUrl: 'https://via.placeholder.com/300x150',
+                imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/6/6d/TFT-Pixel-Demo-Image-200x150.png',
                 imageBuilder: (context, imageProvider) => Container(
                   decoration: BoxDecoration(
                     image: DecorationImage(
@@ -84,7 +84,7 @@ class BasicContent extends StatelessWidget {
               ),
             ),
             CachedNetworkImage(
-              imageUrl: 'https://via.placeholder.com/300x300',
+              imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/6/6b/Icecat1-300x300.svg',
               placeholder: (context, url) => const CircleAvatar(
                 backgroundColor: Colors.amber,
                 radius: 150,
@@ -121,7 +121,7 @@ class BasicContent extends StatelessWidget {
             _sizedContainer(
               CachedNetworkImage(
                 maxHeightDiskCache: 10,
-                imageUrl: 'https://via.placeholder.com/350x200',
+                imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/6/6d/TFT-Pixel-Demo-Image-200x150.png',
                 placeholder: (context, url) =>
                     const CircularProgressIndicator(),
                 errorWidget: (context, url, error) => const Icon(Icons.error),
